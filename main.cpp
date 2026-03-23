@@ -28,6 +28,8 @@ int main(int argc, char* argv[]) {
     }
    }
 
+
+    cout<<"Youngest student\n";
    for(i=0;i<N;i++)
    {
     if(a[i].show_age()==youngest)
