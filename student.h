@@ -14,8 +14,8 @@ public:
    void print_age();
    void set_age(int x);
    int show_age();
-   int get_age();
-   string get_name();
+   void get_age(int x);
+   void get_name(string n);
 
 
 };
@@ -41,27 +41,19 @@ void student::print_name()
 
 void student::print_age()
 {
-  cout<<"Age : "<<age<<endl;
+  cout<<"Age: "<<age<<endl;
 }
 
-int student::get_age()
+void student::get_age(int x)
 {
-
-  cout<<"Intput Age : ";
-	cin>>age; 
-	set_age(age);
-
-  return age;
+	age = x; 
 }
 
 
 
-string student::get_name()
+void student::get_name(string n)
 {
-  cout<<"Your Name is : ";
-  cin>>name;
-
-  return name;
+  name=n;
 }
 
 int student::show_age()
